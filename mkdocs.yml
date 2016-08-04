@@ -1,0 +1,5 @@
+site_name: "SAREhub Opis koncepcji"
+pages:
+- Wstęp: 'index.md'
+- Zdarzenia: 'event.md'
+theme: readthedocs

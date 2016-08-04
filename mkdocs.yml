@@ -1,4 +1,4 @@
-site_name: "SAREhub Opis koncepcji"
+site_name: "SAREhub"
 pages:
 - Wstęp: 'index.md'
 - Zdarzenia: 'event.md'

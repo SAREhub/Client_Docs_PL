@@ -3,3 +3,5 @@ pages:
 - Wstęp: 'index.md'
 - Zdarzenia: 'event.md'
 theme: united
+extra_css:
+-css/extra.css

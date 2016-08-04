@@ -4,4 +4,4 @@ pages:
 - Zdarzenia: 'event.md'
 theme: united
 extra_css:
--css/extra.css
+- css/extra.css

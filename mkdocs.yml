@@ -2,4 +2,4 @@ site_name: "SAREhub"
 pages:
 - Wstęp: 'index.md'
 - Zdarzenia: 'event.md'
-theme: united
+theme: United

@@ -5,7 +5,7 @@ które wykorzystują bliblioteki klienckie.
 
 ### Czym jest SAREhub ?
  Jest to platforma który umożliwia integrację wielu systemów oraz pozwala na ich wzajemne interakcje.
- Interakcje są realizowane poprzez wysyłanie konkretnych zdarzeń do odpowiedniego systmu który je obsługuje.
+ Interakcje są realizowane poprzez wysyłanie konkretnych zdarzeń do odpowiedniego systemu który je obsługuje.
  
  ![SAREhubPlatformOverview](assets\img\diagrams\SAREhubPlatformOverview.svg)
  

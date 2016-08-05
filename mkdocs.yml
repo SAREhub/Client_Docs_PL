@@ -2,6 +2,7 @@ site_name: "SAREhub"
 pages:
 - Wstęp: 'index.md'
 - Zdarzenia: 'event.md'
+- System: 'system.md'
 theme: united
 extra_css:
 - css/extra.css

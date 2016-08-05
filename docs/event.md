@@ -22,15 +22,19 @@ Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależn
 ## Źródła zdarzeń
  System podłączony do SAREhuba może generować zdarzenia specyficzne dla siebie 
  np. Zdarzenie wejścia na podaną stronę internetową.
- Takie zdarzenie może przekazać do dowolnego systemu który potrafi odpowiednio zaaregować na nie(potrafi je przetworzyć).
+ Takie zdarzenie może przekazać do systemu który jest zainteresowany jego obsługą.
  W odpowiedzi na zdarzenia system może również generować zdarzenia innych typów,
  które przekaże innym systemom do których może je publikować.
  
 ### RabbitMQ
- Podstawowym źródłem zdarzeń które są generowane przez inne systemy są kolejki Rabbita. 
+ Podstawowym źródłem zdarzeń które są generowane przez inne systemy są kolejki Rabbita.
+ Moduł danego systemu otrzymuje dostęp do kolejki o odpowiednim identyfikatorze do której kierowane są zdarzenia z innych systemów.
  
 ## Zlewy dla zdarzeń
  Zlewy(sink) to miejsca do których trafiają zdarzenia by zostać przetworzone.
  Moduł systemu posługuje się nimi by zbudować rurociąg przetwarzania.
  W rurociągu na podstawie zdarzenia wejściowego system może wykonywać odpowiednie akcje(np.wysłać maila, włączyć ulubioną muzykę na odwiedzanej stronie itp.).
  
+### RabbitMQ
+ Zdarzenia wygenerowane przez system przeznaczone dla innych systemów trafiają poprzez dedykowany exchange systemu 
+ poprzez odpowiedni routing key do kolejki danego modułu innego systemu.

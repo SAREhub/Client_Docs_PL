@@ -1,7 +1,9 @@
-## Dokumentacja SAREhuba
-Dokumentacja SAREhuba w języku polskim
-Udostępniona na [readthedocs.io](http://sarehub.readthedocs.io/pl/)
+## Documentation of SAREhub
+[![Documentation Status](https://readthedocs.org/projects/cartodb/badge/?version=latest)](http://cartodb.readthedocs.io/en/latest/?badge=latest)
 
-- pisana w Markdown
-- budowana poprzez narzędzie [mkdocs](http://www.mkdocs.org/)
-- Diagramy tworzone w aplikacji [draw.io](https://www.draw.io/)
+### Contribution help
+- language: Polish
+- hosted: [readthedocs.io](http://sarehub.readthedocs.io/pl/)
+- Markdown
+- Builder: [mkdocs](http://www.mkdocs.org/)
+- Diagrams in [draw.io](https://www.draw.io/)

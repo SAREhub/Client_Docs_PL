@@ -3,6 +3,7 @@ pages:
 - Wstęp: 'index.md'
 - System: 'system.md'
 - Zdarzenia: 'event.md'
+- Integracja: 'integration.md'
 theme: united
 extra_css:
 - css/extra.css

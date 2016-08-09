@@ -1,6 +1,7 @@
 ## System
 
-
+ W SAREhubie mianem systemu określamy element, który potrafi generować własne zdarzenia i odpowiednio reagować na wybrane
+ zdarzenia generowane przez inne systemy, które zostały do niego skierowane. 
 
 ## Podłączenie do SAREhub
 
@@ -16,6 +17,7 @@ C*nazwasystemu*
 Rozwiązanie to pozwala np. na podzielenie obsługi różnych komunikatów na pojedyncze procesy. System w trybie multi,
 otrzymuje dostęp do kolejki która ma postać C*nazwasystemu*_identyfikatorHuba 
 * tryb none oznacza brak kolejki
+
  
 System ma prawo zapisu wyłącznie do exchange o nazwie zgodnej z nadaną nazwą systemu
 poprzedzonej literami PC, czyli PC*nazwasystemu* .
@@ -24,10 +26,12 @@ poprzedzonej literami PC, czyli PC*nazwasystemu* .
 
 ![System](assets\img\diagrams\System.svg)
 
-Powyższy diagram przedstawia sposób przepływu wymiany komunikatów pomiędzy systemami. 
+Powyższy diagram przedstawia sposób przepływu wymiany zdarzeń pomiędzy systemami. 
 Zdarzenia kierowane są do kolejek właściwych odbiorców, dzięki użyciu klucza routingu (routing_key).
 Mogą być one przesyłane zarówno z modułu, który jest wyłącznie producentem (Module3, Module4), jak również z modułu 
-który spełnia rolę producenta oraz konsumenta (Module1, Module2). Klucz routingu, który kieruje zarzenia do exchange 
+który spełnia rola producenta oraz konsumenta (Module1, Module2). Klucz routingu, który kieruje zarzenia do exchange 
 systemu, przyjmuje wartość *hubId.#*. Zdarzenie kierowane jest następnie do exchange hubId, a później 
-do wybranej kolejki sytemu, dla danego modułu. W tym przypadku wartość klucza routingu przyjmuje np. *hubId.system1_module2*
+do wybranej kolejki sytemu, dla danego modułu. W tym przypadku wartość klucza routingu przyjmuje 
+np. *hubId.system1_module2* 
+
 System może posiadać wiele kolejek w zależności od liczby zintegrowanych modułów.

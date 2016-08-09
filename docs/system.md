@@ -24,10 +24,10 @@ poprzedzonej literami PC, czyli PC*nazwasystemu* .
 
 ![System](assets\img\diagrams\System.svg)
 
-Powyższy diagram przedstawia sposób przepływu wymiany zdarzeń pomiędzy systemami. 
+Powyższy diagram przedstawia sposób przepływu wymiany komunikatów pomiędzy systemami. 
 Zdarzenia kierowane są do kolejek właściwych odbiorców, dzięki użyciu klucza routingu (routing_key).
 Mogą być one przesyłane zarówno z modułu, który jest wyłącznie producentem (Module3, Module4), jak również z modułu 
-który spełnia rola producenta oraz konsumenta (Module1, Module2). Klucz routingu, który kieruje zarzenia do exchange 
+który spełnia rolę producenta oraz konsumenta (Module1, Module2). Klucz routingu, który kieruje zarzenia do exchange 
 systemu, przyjmuje wartość *hubId.#*. Zdarzenie kierowane jest następnie do exchange hubId, a później 
 do wybranej kolejki sytemu, dla danego modułu. W tym przypadku wartość klucza routingu przyjmuje np. *hubId.system1_module2*
 System może posiadać wiele kolejek w zależności od liczby zintegrowanych modułów.

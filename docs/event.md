@@ -51,6 +51,8 @@ Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależn
 ##### Przykład 1
  System X wysyła zdarzenie "wysyłka maila do użytkownika" do systemu Y. System Y uruchamia wysyłkę mail do podanej w zdarzeniu osoby
 
-* test1
-* test2
+- test1
+* a1
+* b2
+- test2
 

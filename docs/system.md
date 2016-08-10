@@ -12,8 +12,7 @@ system1). Dodatkowo musi określić sposób kolejkowania zadań dla każdego z m
 none):
 - aaaaa
 
-saasa
-
+Dodatkowo musi określić sposób kolejkowania zadań dla każdego z modułów (single, multi, none):
 - w trybie kolejkowania "single" zdarzenia wszystkich podłączonych kont SAREhub'a są przesyłane do jednej kolejki. 
   System otrzymuje dostęp do kolejki o nazwie zgodnej z nazwą systemu poprzedzonej literą C, C*nazwasystemu*
 - tryb "multi" pozwala na przesyłanie zdrzeń ze wszystkich podłączonych kont SAREhub'a do wielu kolejek. 

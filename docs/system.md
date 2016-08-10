@@ -3,6 +3,11 @@
  W SAREhubie mianem systemu określamy element, który potrafi generować własne zdarzenia i odpowiednio reagować na wybrane
  zdarzenia generowane przez inne systemy, które zostały do niego skierowane. 
 
+## Moduł systemu
+
+System może być podzielony na wiele modułów w zależności od danej funkcjonalności. Każdy moduł może być zarówno 
+producentem jak i konsumentem zdarzeń.
+
 ## Podłączenie do SAREhub
 
 Zewnętrzny system, który chce podłączyć się do SAREhub musi uzyskać login i hasło do systemu. 
@@ -10,15 +15,14 @@ Nadana mu zostanie także nazwa systemu identyfikująca go w SAREhub. Nazwa syst
 może składać się z od 3 do 32 znaków, wyłącznie z małych liter alfabetu łacińskiego oraz liczb (np.
 system1). Dodatkowo musi określić sposób kolejkowania zadań dla każdego z modułów (single, multi, none):
 
-- w trybie kolejkowania "single" zdarzenia wszystkich podłączonych kont SAREhub'a są przesyłane do jednej kolejki. 
-  System otrzymuje dostęp do kolejki o nazwie zgodnej z nazwą systemu poprzedzonej literą C, C*nazwasystemu*
-- tryb "multi" pozwala na przesyłanie zdrzeń ze wszystkich podłączonych kont SAREhub'a do wielu kolejek. 
-  Rozwiązanie to pozwala np. na podzielenie obsługi różnych komunikatów na pojedyncze procesy. System w trybie "multi",
-  otrzymuje dostęp do kolejki która ma postać C*nazwasystemu*_identyfikatorHuba 
+- w trybie kolejkowania "single" zdarzenia wszystkich podłączonych kont SAREhub'a są przesyłane do jednej kolejki.
+  System otrzymuje dostęp do kolejek o nazwie zgodnej z formatem C*nazwasystemu_moduł*
+- tryb "multi" pozwala na przesyłanie zdarzeń ze wszystkich podłączonych kont SAREhub'a do wielu kolejek.
+  System w trybie "multi", otrzymuje dostęp do kolejek o nazwie zgodnej z formatem C*nazwasystemu_moduł_hubId*
 - tryb "none" oznacza brak kolejki
 
-System ma prawo zapisu wyłącznie do exchange o nazwie zgodnej z nadaną nazwą systemu
-poprzedzonej literami PC, czyli PC*nazwasystemu*
+System ma prawo zapisu wyłącznie do exchange o nazwie zgodnej z nadaną nazwą systemu poprzedzonej literami PC, 
+czyli PC*nazwasystemu*
 
 ## Schemat wymiany zdarzeń pomiędzy systemami
 

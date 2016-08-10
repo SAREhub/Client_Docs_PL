@@ -10,7 +10,7 @@ które wykorzystują bliblioteki klienckie.
  Dzięki integracji kolejnych systemów, możliwa jest wymiana danych pomiędzy zintegrowanymi systemami różnych producentów i budowa jednego 
  wspólnego profilu użytkownika. 
  
- ![SAREhubPlatformOverview](assets\img\diagrams\SAREhubPlatformOverview.svg)
+ ![SAREhubPlatformOverview](assets/img/diagrams/SAREhubPlatformOverview.svg)
  
 ### Czym jest system ?
  W SAREhubie mianem systemu określamy element, który potrafi generować własne zdarzenia i odpowiednio reagować na wybrane

@@ -1,16 +1,21 @@
 ## Zdarzenie
 
-W SAREhubie zdarzenie określa wystąpienie jakieś akcji np. wejście na stronę internetową.
-Zdarzenia są generowane przez zintegrowane w SAREhabie systemy.
-Zdarzenie może zostać skierowane do innego systemu który potrafi na nie odpowiednio zareagować i 
-ewentualnie wysłać nowe do innego systemu lub w ramach odpowiedzi do tego samego z którego pochodziło.
-
+* Określa wystąpienie jakieś akcji np. wejście na stronę internetową.
+* Jest generowane przez zintegrowane w SAREhabie systemy.
+* Wywołuje odpowiednie akcje w nasłuchujących go systemach podłączonych do SAREhuba.
 
 ## Specyfikacja zdarzenia
 
-Zdarzenie posiada konkretny typ. 
-System który generuje określone przez siebie zdarzenia musi dostarczyć ich specyfikację innym zainteresowanym systemom,
-które chcą ich nasłuchiwać.
+Każde zdarzenie posiada swoją specyfikację, którą dostarcza zintegrowany z SAREhubem system.
+Specyfikacja ta określa: 
+
+* identyfikator typu zdarzenia
+* listę atrybutów zdarzenia
+* opis
+
+## Magistrala zdarzeń 
+ Jest to serce platformy SAREhub. Przez nie pomopowane są zdarzenia do zintegrowanych systemów. 
+ Rolę tej magistrali pełni w SAREhubie broker wiadomości RabbitMQ 
 
 ## Strumienie zdarzeń i rurociąg(pipeline) przetwarzania
 
@@ -20,11 +25,10 @@ Rurociągiem przetwarzania nazywamy odpowiednie połączenie źródła(source) s
 do których po kolei wpadają zdarzenia.
 
 
-![EventStreamProcessing](assets\img\diagrams\EventStreamProcessing.svg)
+![EventStreamProcessing](assets/img/diagrams/EventStreamProcessing.svg)
  
 Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależności od potrzeb, tak samo rurociąg przetwarzenia
  może zostać skonfigurowany tak by przetwarzać tylko określony typ zdarzeń dla zwiększenia wydajności i uproszczenia logiki.
- 
  
 ## Źródła zdarzeń
  System podłączony do SAREhuba może generować zdarzenia specyficzne dla siebie 
@@ -49,6 +53,12 @@ Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależn
 ## Przykłady interackji pomiędzy systemami
 
 ##### Przykład 1
- System X wysyła zdarzenie "wysyłka maila do użytkownika" do systemu Y. System Y uruchamia wysyłkę mail do podanej w zdarzeniu osoby
-* test2
+![EventStreamProcessing](assets/img/diagrams/EventProcessingExample1.svg)
+ 1. Użytkownik wchodzi na stronę www.example.com/page1 system X wysyła zdarzenie(UserViewedPageEvent) do SAREhuba.
+ 2. System Y nasłuchuje na zdarzenia typu UserViewedPageEvent i 
+    jeśli zostanie spełniona odpowiednia reguła wysyła zdarzenie(CreatedMailEvent) do SAREhuba.
+ 3. System Z nasłuchuje na zdarzenia typu CreatedMailEvent i 
+    wysyła odpowiedni mail do użytkownika zapisanego w atrybutach zdarzenia oraz zdarzenie(SentMailEvent) do SAREhuba.
+ 
+
 

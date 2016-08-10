@@ -22,7 +22,7 @@ poprzedzonej literami PC, czyli PC*nazwasystemu*
 
 ## Schemat wymiany zdarzeń pomiędzy systemami
 
-![System](assets\img\diagrams\System.svg)
+![System](assets/img/diagrams/System.svg)
 
 Powyższy diagram przedstawia sposób przepływu wymiany zdarzeń pomiędzy systemami. 
 Zdarzenia kierowane są do kolejek właściwych odbiorców, dzięki użyciu klucza routingu (routing_key).

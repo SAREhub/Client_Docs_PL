@@ -53,7 +53,9 @@ Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależn
 ## Przykłady interackji pomiędzy systemami
 
 ##### Przykład 1
+
 ![EventStreamProcessing](assets/img/diagrams/EventProcessingExample1.svg)
+
  1. Użytkownik wchodzi na stronę www.example.com/page1 system X wysyła zdarzenie(UserViewedPageEvent) do SAREhuba.
  2. System Y nasłuchuje na zdarzenia typu UserViewedPageEvent i 
     jeśli zostanie spełniona odpowiednia reguła wysyła zdarzenie(CreatedMailEvent) do SAREhuba.

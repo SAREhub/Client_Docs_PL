@@ -37,7 +37,7 @@ Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależn
  W odpowiedzi na zdarzenia system może również generować zdarzenia innych typów,
  które przekaże innym systemom do których może je publikować.
  
-##### RabbitMQ
+###### RabbitMQ
  Podstawowym źródłem zdarzeń które są generowane przez inne systemy są kolejki Rabbita.
  Moduł danego systemu otrzymuje dostęp do kolejki o odpowiednim identyfikatorze do której kierowane są zdarzenia z innych systemów.
  
@@ -46,21 +46,20 @@ Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależn
  Moduł systemu posługuje się nimi by zbudować rurociąg przetwarzania.
  W rurociągu na podstawie zdarzenia wejściowego system może wykonywać odpowiednie akcje(np.wysłać maila, włączyć ulubioną muzykę na odwiedzanej stronie itp.).
  
-##### RabbitMQ
+###### RabbitMQ
  Zdarzenia wygenerowane przez system przeznaczone dla innych systemów trafiają poprzez dedykowany exchange systemu 
  poprzez odpowiedni routing key do kolejki danego modułu innego systemu.
  
-## Przykłady interackji pomiędzy systemami
+## Przykłady interakcji pomiędzy systemami
 
-##### Przykład 1
+###### Przykład 1
+Poniższy przykład pokazuje prostą reakcję kilku zintegrowanych z SAREhubem systemów na zdarzenie wejścia użytkownika na
+stronę internetową.
 
 ![EventStreamProcessing](assets/img/diagrams/EventProcessingExample1.svg)
 
  1. Użytkownik wchodzi na stronę www.example.com/page1 system X wysyła zdarzenie(UserViewedPageEvent) do SAREhuba.
  2. System Y nasłuchuje na zdarzenia typu UserViewedPageEvent i 
-    jeśli zostanie spełniona odpowiednia reguła wysyła zdarzenie(CreatedMailEvent) do SAREhuba.
- 3. System Z nasłuchuje na zdarzenia typu CreatedMailEvent i 
+    reaguje na nie w postaci wysłania kolejnego zdarzenia(RequestedSendMailEvent) do SAREhuba.
+ 3. System Z nasłuchuje na zdarzenia typu RequestedSendMailEvent i 
     wysyła odpowiedni mail do użytkownika zapisanego w atrybutach zdarzenia oraz zdarzenie(SentMailEvent) do SAREhuba.
- 
-
-

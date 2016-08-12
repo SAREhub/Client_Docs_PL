@@ -1,5 +1,5 @@
 ## Documentation of SAREhub
-[![Documentation Status](https://readthedocs.org/projects/cartodb/badge/?version=latest)](http://cartodb.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/sarehub/badge/?version=latest)](http://sarehub.readthedocs.io/pl/latest/?badge=latest)
 
 ### Contribution help
 - language: Polish

@@ -3,9 +3,11 @@ SAREhub
 #######
 .. toctree::
    :maxdepth: 2
-   :glob:
 
-   *
+   system
+   event
+   types-of-events
+   integration
 
 Czym jest SAREhub ?
 ===================

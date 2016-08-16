@@ -1,9 +1,3 @@
-.. toctree::
-  :maxdepth: 2
-  :glob:
-
-  *
-
 # The suffix of source filenames.
 from recommonmark.parser import CommonMarkParser
 

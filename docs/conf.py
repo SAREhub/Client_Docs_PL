@@ -10,5 +10,6 @@ html_show_sphinx = False
 html_style = 'css/extra.css'
 
 latex_documents = [
-('startdocname', 'index')
+  (master_doc, 'index.tex', u'Wstęp',
+   u'SARE SA', 'manual', True),
 ]

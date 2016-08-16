@@ -9,6 +9,11 @@ SAREhub
    types-of-events
    integration
 
+.. toctree::
+   :hidden:
+
+   self
+
 Czym jest SAREhub ?
 ===================
 To platforma, która umożliwia integrację wielu systemów oraz pozwala na ich wzajemne interakcje.

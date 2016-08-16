@@ -1,6 +1,11 @@
 #######
-SAREhub
+Wstęp
 #######
+.. toctree::
+   :hidden:
+
+   self
+
 .. toctree::
    :maxdepth: 2
 
@@ -9,10 +14,7 @@ SAREhub
    types-of-events
    integration
 
-.. toctree::
-   :hidden:
 
-   self
 
 Czym jest SAREhub ?
 ===================

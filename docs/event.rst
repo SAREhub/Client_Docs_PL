@@ -63,7 +63,7 @@ Przykłady interakcji pomiędzy systemami
 
 Przykład 1
 ----------
-.. image:: assets/img/diagrams/EventProcessingExample1.svg
+.. image:: /assets/img/diagrams/EventProcessingExample1.svg
 
 Powyższy diagram pokazuje prostą reakcję kilku zintegrowanych z SAREhubem systemów na zdarzenie wejścia użytkownika na
 stronę internetową.

@@ -25,11 +25,11 @@ Dzięki integracji kolejnych systemów, możliwa jest wymiana danych pomiędzy z
 wspólnego profilu użytkownika.
 .. only:: latex
 
-  .. image:: assets/img/diagrams/SAREhubPlatformOverview.png
+  .. image:: /assets/img/diagrams/SAREhubPlatformOverview.png
 
 .. only:: html
 
-  .. image:: assets/img/diagrams/SAREhubPlatformOverview.svg
+  .. image:: /assets/img/diagrams/SAREhubPlatformOverview.svg
 
 Czym jest system ?
 ------------------

@@ -23,7 +23,13 @@ Interakcje te są realizowane poprzez wysyłanie konkretnych zdarzeń do danego 
 SAREhub jest systemem zorientowanym na użytkownika, tj. każdy komunikat wymieniany pomiędzy modułami dotyczy użytkownika.
 Dzięki integracji kolejnych systemów, możliwa jest wymiana danych pomiędzy zintegrowanymi systemami różnych producentów i budowa jednego
 wspólnego profilu użytkownika.
- .. image:: assets/img/diagrams/SAREhubPlatformOverview.svg
+.. only:: latex
+
+  .. image:: assets/img/diagrams/SAREhubPlatformOverview.png
+
+.. only:: html
+
+  .. image:: assets/img/diagrams/SAREhubPlatformOverview.svg
 
 Czym jest system ?
 ------------------

@@ -1,5 +1,3 @@
-Contents:
-
 .. toctree::
   :maxdepth: 2
   :glob:
@@ -13,5 +11,5 @@ from recommonmark.parser import CommonMarkParser
 source_suffix = ['.rst', '.md']
 
 source_parsers = {
-   ’.md’: CommonMarkParser,
+   '.md': CommonMarkParser,
 }

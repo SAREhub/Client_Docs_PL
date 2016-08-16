@@ -1,5 +1,5 @@
 ## Documentation of SAREhub
-[![Documentation Status](https://readthedocs.org/projects/sarehub/badge/?version=latest)](http://sarehub.readthedocs.io/pl/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/sarehub/badge/?version=stable)](http://sarehub.readthedocs.io/pl/stable/?badge=stable)
 
 ### Contribution help
 - language: Polish

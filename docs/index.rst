@@ -4,7 +4,6 @@ SAREhub
 .. toctree::
    :maxdepth: 2
 
-   index
    system
    event
    types-of-events

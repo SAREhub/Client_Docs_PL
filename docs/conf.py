@@ -6,3 +6,5 @@ author = u'SARE SA'
 
 version = '0.2'
 release = '0.2'
+
+html_theme = "pyramid"

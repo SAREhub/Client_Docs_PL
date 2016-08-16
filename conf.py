@@ -1,3 +1,5 @@
+master_doc = 'index'
+
 # The suffix of source filenames.
 from recommonmark.parser import CommonMarkParser
 

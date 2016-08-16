@@ -28,10 +28,6 @@ wspólnego profilu użytkownika.
 
   .. image:: /assets/img/diagrams/SAREhubPlatformOverview.png
 
-  fdfs
-
-  .. image:: /assets/img/diagrams/SAREhubPlatformOverview.svg
-
 .. only:: html
 
   .. image:: /assets/img/diagrams/SAREhubPlatformOverview.svg

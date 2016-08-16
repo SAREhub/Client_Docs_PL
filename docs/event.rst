@@ -28,8 +28,14 @@ Strumień zdarzeń to ciąg zdarzeń, który jest przetwarzany w rurociągu prze
 Rurociągiem przetwarzania nazywamy odpowiednie połączenie źródła(source) strumienia zdarzeń ze "zlewami"(sinks)
 do których po kolei wpadają zdarzenia.
 
+.. only:: latex
 
-.. image:: assets/img/diagrams/EventStreamProcessing.svg
+  .. image:: /assets/img/diagrams/EventStreamProcessing.png
+
+.. only:: html
+
+  .. image:: /assets/img/diagrams/EventStreamProcessing.svg
+
 
 Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależności od potrzeb, tak samo rurociąg przetwarzenia
  może zostać skonfigurowany tak by przetwarzać tylko określony typ zdarzeń dla zwiększenia wydajności i uproszczenia logiki.
@@ -63,7 +69,14 @@ Przykłady interakcji pomiędzy systemami
 
 Przykład 1
 ----------
-.. image:: /assets/img/diagrams/EventProcessingExample1.svg
+
+.. only:: latex
+
+  .. image:: /assets/img/diagrams/EventProcessingExample1.png
+
+.. only:: html
+
+  .. image:: /assets/img/diagrams/EventProcessingExample1.svg
 
 Powyższy diagram pokazuje prostą reakcję kilku zintegrowanych z SAREhubem systemów na zdarzenie wejścia użytkownika na
 stronę internetową.

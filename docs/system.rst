@@ -1,15 +1,16 @@
-## System
-
- W SAREhubie mianem systemu określamy element, który potrafi generować własne zdarzenia i odpowiednio reagować na wybrane
+######
+System
+######
+W SAREhubie mianem systemu określamy element, który potrafi generować własne zdarzenia i odpowiednio reagować na wybrane
  zdarzenia generowane przez inne systemy, które zostały do niego skierowane. 
 
-## Moduł systemu
-
+Moduł systemu
+=============
 System może być podzielony na wiele modułów w zależności od danej funkcjonalności. Każdy moduł może być zarówno 
 producentem jak i konsumentem zdarzeń.
 
-## Podłączenie do SAREhub
-
+Podłączenie do SAREhub
+======================
 Zewnętrzny system, który chce podłączyć się do SAREhub musi uzyskać login i hasło do systemu. 
 Nadana mu zostanie także nazwa systemu identyfikująca go w SAREhub. Nazwa systemu
 może składać się z od 3 do 32 znaków, wyłącznie z małych liter alfabetu łacińskiego oraz liczb (np.
@@ -24,9 +25,9 @@ system1). Dodatkowo musi określić sposób kolejkowania zadań dla każdego z m
 System ma prawo zapisu wyłącznie do exchange o nazwie zgodnej z nadaną nazwą systemu poprzedzonej literami PC, 
 czyli PC*nazwasystemu*
 
-## Schemat wymiany zdarzeń pomiędzy systemami
-
-![System](assets/img/diagrams/System.svg)
+Schemat wymiany zdarzeń pomiędzy systemami
+==========================================
+.. image:: assets/img/diagrams/System.svg
 
 Powyższy diagram przedstawia sposób przepływu wymiany zdarzeń pomiędzy systemami. 
 Zdarzenia kierowane są do kolejek właściwych odbiorców, dzięki użyciu klucza routingu (routing_key).

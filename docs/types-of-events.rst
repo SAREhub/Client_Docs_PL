@@ -66,6 +66,7 @@ Podstawowe zdarzenia
 Dla klucza **email** obiekt params _POWINIEN_ być zbudowany wg następującego schematu (dopuszczalne są dodatkowe argumenty):
 
 .. code-block:: json
+
 {  
   "from": "nadawca emaila",  
   "to": "odbiorca emaila",  
@@ -79,6 +80,7 @@ Dla klucza **email** obiekt params _POWINIEN_ być zbudowany wg następującego 
 
 Dla klucza **mobile** obiekt params _POWINIEN_ być zbudowany wg następującego schematu (dopuszczalne są dodatkowe argumenty):
 .. code-block:: json
+
 {  
   "from": "nadawca sms",  
   "to": "odbiorca sms",  

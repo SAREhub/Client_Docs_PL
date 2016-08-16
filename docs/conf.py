@@ -8,3 +8,7 @@ version = "0.2"
 release = "0.2"
 html_show_sphinx = False
 html_style = 'css/extra.css'
+
+latex_documents = [
+('startdocname', 'index')
+]

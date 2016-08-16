@@ -62,7 +62,7 @@ Poprawnymi kluczami routingu są, np.:
     którego wartością jest treść wiadomości skierowanej do użytkownika. Obiekt params może zawierać również atrybuty będące 
     nazwami kluczy których wartościami są obiekty.
     
-Dla klucza **email** obiekt params POWINIEN być zbudowany wg następującego schematu (dopuszczalne są dodatkowe argumenty):
+Dla klucza **email** obiekt params _POWINIEN_ być zbudowany wg następującego schematu (dopuszczalne są dodatkowe argumenty):
 
 ~~~json
 {  
@@ -76,7 +76,7 @@ Dla klucza **email** obiekt params POWINIEN być zbudowany wg następującego sc
 }
 ~~~
 
-Dla klucza **mobile** obiekt params POWINIEN być zbudowany wg następującego schematu (dopuszczalne są dodatkowe argumenty):
+Dla klucza **mobile** obiekt params _POWINIEN_ być zbudowany wg następującego schematu (dopuszczalne są dodatkowe argumenty):
 ~~~json
 {  
   "from": "nadawca sms",  

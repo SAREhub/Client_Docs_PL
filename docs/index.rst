@@ -1,3 +1,10 @@
+Contents:
+
+.. toctree::
+  :maxdepth: 2
+  :glob:
+
+  *
 ## Wstęp
 
 Ta dokumentacja zawiera opis koncepcji, 

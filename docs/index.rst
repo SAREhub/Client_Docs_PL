@@ -24,7 +24,7 @@ W SAREhubie mianem systemu określamy element, który potrafi generować własne
 
 W jaki sposób realizowana jest wymiana zdarzeń pomiędzy systemami ?
 ===================================================================
-Wymiana jest realizowana poprzez brokera wiadomości, którego rolę w SAREhubie pełni [RabbitMQ](http://www.rabbitmq.com/).
+Wymiana jest realizowana poprzez brokera wiadomości, którego rolę w SAREhubie pełni .. RabbitMQ: http://www.rabbitmq.com/.
  Do brokera system który pragnie wymiany zdarzeń łączy się poprzez protokół AMQP.
 
  

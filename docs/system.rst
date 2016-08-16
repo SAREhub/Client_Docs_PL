@@ -28,8 +28,6 @@ czyli PC*nazwasystemu*
 Schemat wymiany zdarzeń pomiędzy systemami
 ==========================================
 
-.. image:: /assets/img/diagrams/System.svg
-
 .. only:: latex
 
   .. image:: /assets/img/diagrams/System.png

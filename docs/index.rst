@@ -1,13 +1,13 @@
+#######
+SAREhub
+#######
+
 .. toctree::
-   :titlesonly:
    :maxdepth: 2
    :glob:
 
    *
 
-#######
-SAREhub
-#######
 Czym jest SAREhub?
 ===========
 To platforma, która umożliwia integrację wielu systemów oraz pozwala na ich wzajemne interakcje.

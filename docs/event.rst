@@ -63,14 +63,9 @@ Przykłady interakcji pomiędzy systemami
 
 Przykład 1
 ----------
-
-Poniższy przykład pokazuje prostą reakcję kilku zintegrowanych z SAREhubem systemów na zdarzenie wejścia użytkownika na
-stronę internetową.
-
-
 .. image:: assets/img/diagrams/EventProcessingExample1.svg
-
-
+Powyższy diagram pokazuje prostą reakcję kilku zintegrowanych z SAREhubem systemów na zdarzenie wejścia użytkownika na
+stronę internetową.
  #. Użytkownik wchodzi na stronę www.example.com/page1 system X wysyła zdarzenie(UserViewedPageEvent) do SAREhuba.
  #. System Y nasłuchuje na zdarzenia typu UserViewedPageEvent i
     reaguje na nie w postaci wysłania kolejnego zdarzenia(RequestedSendMailEvent) do SAREhuba.

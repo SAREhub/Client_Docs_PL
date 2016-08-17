@@ -9,7 +9,9 @@ release = "0.4.2"
 html_logo = 'assets/img/logo.svg'
 html_favicon = 'assets/img/favicon.ico'
 html_show_sphinx = False
-
+html_static_path = [
+'/assets/'
+]
 html_context = {
  'css_files': [
   'https://media.readthedocs.org/css/sphinx_rtd_theme.css',

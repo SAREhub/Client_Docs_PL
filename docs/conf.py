@@ -15,8 +15,8 @@ html_context = {
   'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
   'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
   '/assets/extra.css',
- ],
-html_style = 'css/extra.css'
+ ]
+}
 
 latex_logo = 'assets/img/logo.png'
 latex_documents = [

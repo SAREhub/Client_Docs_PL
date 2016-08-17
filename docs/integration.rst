@@ -1,5 +1,5 @@
 ############################
-Sposoby integracji z SAREhub
+Sposoby integracji
 ############################
 
 REST API

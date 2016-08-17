@@ -1,5 +1,5 @@
 #################################################
-Podstawowe typy zdarzeń obsługiwane przez SAREhub
+Podstawowe typy zdarzeń
 #################################################
 Każde zdarzenie w systemie SAREhub powinno posiadać swoją ścieżkę routingu, która definiuje gdzie (do jakiego modułu)
 komunikat zostanie dostarczony. Klucz routingu składa się z od dwóch do pięciu elementów oddzielonych kropką:

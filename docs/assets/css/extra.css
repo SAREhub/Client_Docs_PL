@@ -2,3 +2,11 @@
     background-color: #eee;
     color: #f04e23;
 }
+
+.wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
+    color: #f04e23;
+}
+
+.wy-side-nav-search>div.version {
+    color: #f04e23;
+}

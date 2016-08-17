@@ -45,27 +45,18 @@ Podstawowe zdarzenia
 ====================
 * dla zdarzeń typu user:
 
-    - **online** - informuje, że użytkownik właśnie pojawił się online. Obiekt params **MUSI** zawierać atrybut time zawierający timestamp zdarzenia.
-    W przypadku jeżeli użytkownik odwiedza stronę WWW, obiekt params **POWINIEN** zawierać atrybut url zawierający URL odwiedzaną stronę,
-    - **info** - obiekt params **MOŻE** zawierać wartości innych kluczy, które powiązane są z tym użytkownikiem,
-    - **tag** - użytkownik został oznaczony tagiem. Obiekt params **MUSI** zawierać atrybut name. Wartością atrybutu name
-    może być nazwa tagu lub tablica tagów,
-    - **funnel** - użytkownik wszedł w lejek sprzedażowy. Obiekt params **MUSI** zawierać atrybut time zawierający
-    timestamp zdarzenia oraz **POWINIEN** zawierać atrybut level z wartością określającą poziom zaangażowania
-    użytkownika w wartościach od 0 do 100 (osiągnięto cel).
+ * **online** - informuje, że użytkownik właśnie pojawił się online. Obiekt params **MUSI** zawierać atrybut time zawierający timestamp zdarzenia. W przypadku jeżeli użytkownik odwiedza stronę WWW, obiekt params **POWINIEN** zawierać atrybut url zawierający URL odwiedzaną stronę,
+ * **info** - obiekt params **MOŻE** zawierać wartości innych kluczy, które powiązane są z tym użytkownikiem,
+ * **tag** - użytkownik został oznaczony tagiem. Obiekt params **MUSI** zawierać atrybut name. Wartością atrybutu name może być nazwa tagu lub tablica tagów,
+ * **funnel** - użytkownik wszedł w lejek sprzedażowy. Obiekt params **MUSI** zawierać atrybut time zawierający timestamp zdarzenia oraz **POWINIEN** zawierać atrybut level z wartością określającą poziom zaangażowania użytkownika w wartościach od 0 do 100 (osiągnięto cel).
 
 * dla zdarzeń typu discover:
 
-    - **discover** - payload **MUSI** zawierać przynajmniej jeden z kluczy. Jest to komunikat z prośbą o informacje o
-    użytkowniku identyfikowanym przez klucz. Obiekt params może zawierać atrybut search. Jego wartością jest string
-    (lub tablica stringów) określający szukane parametry, w szczególności klucze (email, emailmd5, cookie, mobile, phone,
-    postal).
+ * **discover** - payload **MUSI** zawierać przynajmniej jeden z kluczy. Jest to komunikat z prośbą o informacje o użytkowniku identyfikowanym przez klucz. Obiekt params może zawierać atrybut search. Jego wartością jest string (lub tablica stringów) określający szukane parametry, w szczególności klucze (email, emailmd5, cookie, mobile, phone, postal).
 
 * dla zdarzeń typu message:
 
-    - **message** – payload **MUSI** zawierać przynajmniej jeden z kluczy. Obiekt params **POWINIEN** zawierać atrybut body,
-    którego wartością jest treść wiadomości skierowanej do użytkownika. Obiekt params może zawierać również atrybuty będące
-    nazwami kluczy których wartościami są obiekty.
+ * **message** – payload **MUSI** zawierać przynajmniej jeden z kluczy. Obiekt params **POWINIEN** zawierać atrybut body, którego wartością jest treść wiadomości skierowanej do użytkownika. Obiekt params może zawierać również atrybuty będące nazwami kluczy których wartościami są obiekty.
 
 Dla klucza **email** obiekt params **POWINIEN** być zbudowany wg następującego schematu (dopuszczalne są dodatkowe argumenty):
 

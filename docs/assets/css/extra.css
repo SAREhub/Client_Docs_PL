@@ -1,3 +1,7 @@
 .wy-side-nav-search {
     background-color: #eee;
 }
+
+.icon-home, .version {
+    color: #f04e23;
+}

@@ -25,7 +25,7 @@ SAREhub jest systemem zorientowanym na użytkownika, tj. każdy komunikat wymien
 Dzięki integracji kolejnych systemów, możliwa jest wymiana danych pomiędzy zintegrowanymi systemami różnych producentów i budowa jednego
 wspólnego profilu użytkownika.
 
-.. only:: latex
+.. only:: latex and epub
 
   .. image:: /assets/img/diagrams/SAREhubPlatformOverview.png
 

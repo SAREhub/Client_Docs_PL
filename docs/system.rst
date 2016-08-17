@@ -28,7 +28,7 @@ czyli PC<**nazwasystemu**>
 Schemat wymiany zdarzeń pomiędzy systemami
 ==========================================
 
-.. only:: latex
+.. only:: latex and epub
 
   .. image:: /assets/img/diagrams/System.png
 

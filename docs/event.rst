@@ -70,7 +70,7 @@ Przykłady interakcji pomiędzy systemami
 Przykład 1
 ----------
 
-.. only:: latex
+.. only:: latex and epub
 
   .. image:: /assets/img/diagrams/EventProcessingExample1.png
 

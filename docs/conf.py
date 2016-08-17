@@ -6,7 +6,7 @@ author = u'SARE SA'
 
 version = "0.4.2"
 release = "0.4.2"
-html_logo = 'assets/img/logo.png'
+html_logo = 'assets/img/logo.svg'
 html_favicon = 'assets/img/favicon.ico'
 html_show_sphinx = False
 html_style = 'css/extra.css'

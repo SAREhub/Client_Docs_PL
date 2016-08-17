@@ -20,25 +20,28 @@ Magistrala zdarzeń
  Jest to serce platformy SAREhub. Przez nie pomopowane są zdarzenia do zintegrowanych systemów.
  Rolę tej magistrali pełni w SAREhubie broker wiadomości RabbitMQ
 
-Strumienie zdarzeń i rurociąg(pipeline) przetwarzania
+Strumienie zdarzeń
 =====================================================
 
-Strumień zdarzeń to ciąg zdarzeń, który jest przetwarzany w rurociągu przetwarzania stworzonym przez system.
+* To ciąg zdarzeń.
+* Zawiera jeden lub więcej typów zdarzeń.
+* Jest przetwarzany przez rurociąg przetwarzania.
 
+Rurociąg(pipeline) przetwarzania
+================================
 Rurociągiem przetwarzania nazywamy odpowiednie połączenie źródła(source) strumienia zdarzeń ze "zlewami"(sinks)
 do których po kolei wpadają zdarzenia.
 
 .. only:: latex
 
-  .. image:: /assets/img/diagrams/EventStreamProcessing.png
+  .. image:: assets/img/diagrams/EventStreamProcessing.png
 
 .. only:: html
 
-  .. image:: /assets/img/diagrams/EventStreamProcessing.svg
+  .. image:: assets/img/diagrams/EventStreamProcessing.svg
 
 
-Strumień zdarzeń może zawierać jeden typ zdarzeń lub różne typy w zależności od potrzeb, tak samo rurociąg przetwarzenia
- może zostać skonfigurowany tak by przetwarzać tylko określony typ zdarzeń dla zwiększenia wydajności i uproszczenia logiki.
+
 
 Źródła zdarzeń
 ==============

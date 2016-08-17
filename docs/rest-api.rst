@@ -60,7 +60,8 @@ opcje do komunikatu:
   -H "Content-Type: application/json" \
   -X POST \
   -d
-  '{"type":"message","user":{"email":"hub@sarehub.com"},"params":{"to":"hub@sarehub.com","from":"test@sarehub.com","subject":"test","body":{"html":"test","txt":"test"}}}'
+  '{"type":"message","user":{"email":"hub@sarehub.com"},"params":{"to":"hub@sarehub.com",
+  "from":"test@sarehub.com","subject":"test","body":{"html":"test","txt":"test"}}}'
 
 **Odpowiedź**
 

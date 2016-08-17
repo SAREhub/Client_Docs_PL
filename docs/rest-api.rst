@@ -1,6 +1,6 @@
-############################
+########
 REST API
-############################
+########
 
 Wstęp
 =====
@@ -68,7 +68,7 @@ opcje do komunikatu:
 
   {
     "state": "success"
-   }
+  }
 
 **Odpowiedź w przypadku błędu**
 
@@ -77,7 +77,7 @@ opcje do komunikatu:
   {
     "state": "error",
     "message": "Treść błędu"
-   }
+  }
 
 Consume
 =======
@@ -162,4 +162,4 @@ Odpowiedź
   {
     "state": "error",
     "message": "Treść błędu"
-   }
+  }

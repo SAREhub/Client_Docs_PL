@@ -40,9 +40,6 @@ do których po kolei wpadają zdarzenia.
 
   .. image:: assets/img/diagrams/EventStreamProcessing.svg
 
-
-
-
 Źródła zdarzeń
 ==============
  System podłączony do SAREhuba może generować zdarzenia specyficzne dla siebie

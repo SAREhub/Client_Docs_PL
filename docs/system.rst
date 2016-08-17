@@ -17,9 +17,9 @@ może składać się z od 3 do 32 znaków, wyłącznie z małych liter alfabetu 
 system1). Dodatkowo musi określić sposób kolejkowania zadań dla każdego z modułów (single, multi, none):
 
 - w trybie kolejkowania "single" zdarzenia wszystkich podłączonych kont SAREhub'a są przesyłane do jednej kolejki.
-  System otrzymuje dostęp do kolejek o nazwie zgodnej z formatem C<**nazwasystemu_moduł**>
+  System otrzymuje dostęp do kolejek o nazwie zgodnej z formatem C<**nazwasystemu**>_<**moduł**>
 - tryb "multi" pozwala na przesyłanie zdarzeń ze wszystkich podłączonych kont SAREhub'a do wielu kolejek.
-  System w trybie "multi", otrzymuje dostęp do kolejek o nazwie zgodnej z formatem C<**nazwasystemu_moduł_hubId**>
+  System w trybie "multi", otrzymuje dostęp do kolejek o nazwie zgodnej z formatem C<**nazwasystemu**>_<**moduł**>_<**hubId**>
 - tryb "none" oznacza brak kolejki
 
 System ma prawo zapisu wyłącznie do exchange o nazwie zgodnej z nadaną nazwą systemu poprzedzonej literami PC,

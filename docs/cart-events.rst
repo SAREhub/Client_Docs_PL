@@ -1,7 +1,7 @@
 #################################################
 Zdarzenia koszykowe
 #################################################
-Zdarzenia koszykowe wysyłane podczas procesu zaupowego.
+Zdarzenia koszykowe wysyłane podczas procesu zakupowego.
 
 Format zdarzenia koszykowego
 ============================
@@ -83,7 +83,7 @@ Przykład:
     "user": {
         "cookie": "22281308789088642"
     },
-    "time": "1469988000",
+    "time": 1469988000,
     "data": {
         "id": "nazwa kategorii",
         "country": "PL",
@@ -100,7 +100,7 @@ Przykład:
     "title": "Atrybuty zdarzenia product_seen",
     "properties": {
         "id": {
-            "type": "integer",
+            "type": "string",
             "title": "Id Produktu."
         },
         "name": {
@@ -172,7 +172,7 @@ Przykład:
     "data": {
         "country": "PL",
         "language": "pl",
-        "id": 1,
+        "id": "1",
         "name": "Samochód zabawka",
         "price": 15900,
         "currency": "pln",
@@ -201,7 +201,7 @@ Przykład:
             "title": "Id koszyka"
         },
         "product_id": {
-            "type": "integer",
+            "type": "string",
             "title": "Id Produktu."
         },
         "name": {
@@ -228,7 +228,7 @@ Przykład:
         },
         "extra": {
             "type": "object",
-            "title": "Dodatowe parametry",
+            "title": "Dodatkowe parametry",
             "description": "Dodatkowe parametry produktu np. rozmiar, kolor itd",
             "properties": {}
         },
@@ -284,7 +284,7 @@ Przykład:
     "time": 1469988000,
     "data": {
         "cart_id": "1",
-        "product_id": 5578,
+        "product_id": "5578",
         "price": 9900,
         "currency": "pln",
         "quantity": 1,
@@ -320,7 +320,7 @@ Przykład:
             "title": "Id koszyka"
         },
         "product_id": {
-            "type": "integer",
+            "type": "string",
             "title": "Id Produktu."
         },
         "price": {
@@ -371,7 +371,7 @@ Przykład:
     "time": 1469988000,
     "data": {
         "cart_id": "1",
-        "product_id": 5578,
+        "product_id": "5578",
         "price": 9900,
         "currency": "pln",
         "quantity": 1,
@@ -393,7 +393,7 @@ Przykład:
             "title": "Id koszyka"
         },
         "product_id": {
-            "type": "integer",
+            "type": "string",
             "title": "Id Produktu."
         },
         "quantity": {

@@ -4,8 +4,8 @@ project = u'SAREhub'
 copyright = u'2016, SARE SA'
 author = u'SARE SA'
 
-version = "0.4.4"
-release = "0.4.4"
+version = "0.4.5"
+release = "0.4.5"
 html_logo = 'assets/img/logo.svg'
 html_favicon = 'assets/img/favicon.ico'
 html_show_sphinx = False

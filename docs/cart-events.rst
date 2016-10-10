@@ -17,7 +17,7 @@ Każde zdarzenie koszykowe ma następujący format:
         "type",
         "user",
         "time",
-        "data"
+        "params"
     ],
     "properties": {
         "type": {
@@ -33,7 +33,7 @@ Każde zdarzenie koszykowe ma następujący format:
             "type": "integer",
             "title": "Czas wystąpienia zdarzenia."
         },
-        "data": {
+        "params": {
             "type": "object",
             "title": "Atrybuty opisujące konkretne zdarzenie.",
             "properties": {}
@@ -84,7 +84,7 @@ Przykład:
         "cookie": "22281308789088642"
     },
     "time": 1469988000,
-    "data": {
+    "params": {
         "id": "nazwa kategorii",
         "country": "PL",
         "language": "pl"
@@ -169,7 +169,7 @@ Przykład:
         "cookie": "22281308789088642"
     },
     "time": 1469988000,
-    "data": {
+    "params": {
         "country": "PL",
         "language": "pl",
         "id": "1",
@@ -282,7 +282,7 @@ Przykład:
         "cookie": "22281308789088642"
     },
     "time": 1469988000,
-    "data": {
+    "params": {
         "cart_id": "1",
         "product_id": "5578",
         "price": 9900,
@@ -369,7 +369,7 @@ Przykład:
         "cookie": "22281308789088642"
     },
     "time": 1469988000,
-    "data": {
+    "params": {
         "cart_id": "1",
         "product_id": "5578",
         "price": 9900,
@@ -431,7 +431,7 @@ Przykład:
         "cookie": "22281308789088642"
     },
     "time": 1469988000,
-    "data": {
+    "params": {
         "cart_id": "1",
         "product_id": "5578",
         "quantity": 1,
@@ -468,7 +468,7 @@ Przykład:
         "cookie": "22281308789088642"
     },
     "time": 1469988000,
-    "data": {
+    "params": {
         "cart_id": "1"
     }
   }
@@ -503,7 +503,7 @@ Krok wypełnienia danych do wysyłki:
         "cookie": "22281308789088642"
     },
     "time": 1469988000,
-    "data": {
+    "params": {
         "step_id": "registration",
         "cart_id": "1"
     }
@@ -519,7 +519,7 @@ Krok zapłaty za zamówienie:
           "cookie": "22281308789088642"
       },
       "time": 1469988000,
-      "data": {
+      "params": {
           "step_id": "payment",
           "cart_id": "1"
       }
@@ -553,7 +553,7 @@ Przykład:
           "cookie": "22281308789088642"
       },
       "time": 1469988000,
-      "data": {
+      "params": {
           "cart_id": "1"
       }
     }

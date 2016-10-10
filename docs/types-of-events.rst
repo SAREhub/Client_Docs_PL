@@ -97,15 +97,10 @@ Lista zdarzeń oraz atrybutów je opisujących
         "name": {
             "type": "string",
             "title": "Nazwa tagu."
-        },
-        "time": {
-            "type": "integer",
-            "title": "Czas zdarzenia."
         }
     },
     "required": [
-        "name",
-        "time"
+        "name"
     ]
   }
 
@@ -120,8 +115,7 @@ Przykład:
     },
     "time": 1475756549,
     "params": {
-        "name": "4|flowchart-filter_previous_block-1461074520658|flowchart-alert-1461074548667",
-        "time": 1475756549
+        "name": "4|flowchart-filter_previous_block-1461074520658|flowchart-alert-1461074548667"
     }
   }
 
@@ -141,7 +135,7 @@ Przykład:
         "processing_message": {
             "type": "object",
             "title": "Wiadomość zwrotna.",
-            "description": "Zdarzenie które ma być wywołane po powrocie komunikatu z szukanymi informacjami. Do niejgo może zostać wstrzyknięta znaleziona wartość klucza.",
+            "description": "Zdarzenie które ma być wywołane po powrocie komunikatu z szukanymi informacjami. Do niego może zostać wstrzyknięta znaleziona wartość klucza.",
             "properties": {}
         }
     },
@@ -167,9 +161,9 @@ Przykład:
             "user": {
                 "cookie": "33413026813181711"
             },
+            "time": 1475756549,
             "params": {
-                "name": "4|flowchart-filter_previous_block-1461074520658|flowchart-alert-1461074548667",
-                "time": 1475756549
+                "name": "4|flowchart-filter_previous_block-1461074520658|flowchart-alert-1461074548667"
             }
         }
     }
@@ -237,7 +231,7 @@ Przykład:
         },
         "visited_sites": {
             "type": "integer",
-            "title": "Liczba odiwedzonych stron"
+            "title": "Liczba odwiedzonych stron"
         },
         "ip": {
             "type": "integer",
@@ -401,8 +395,7 @@ Przykład:
         },
         "uri": {
             "type": "string",
-            "title": "Uri strony.",
-            "description": "An explanation about the purpose of this instance."
+            "title": "Uri strony."
         },
         "domain": {
             "type": "string",
@@ -422,7 +415,7 @@ Przykład:
         },
         "visited_sites": {
             "type": "integer",
-            "title": "Liczba odiwedzonych stron."
+            "title": "Liczba odwiedzonych stron."
         },
         "session_referer": {
             "type": "string",
@@ -512,7 +505,7 @@ Przykład:
     }
   }
 
-* **ping** - Zdarzenie informuje o pobycie użytownika na stronie.
+* **ping** - Zdarzenie informuje o pobycie użytkownika na stronie.
 
 .. code-block:: json
 
@@ -552,7 +545,7 @@ Przykład:
         },
         "visited_sites": {
             "type": "integer",
-            "title": "Liczba odiwedzonych stron."
+            "title": "Liczba odwiedzonych stron."
         },
         "session_referer": {
             "type": "string",

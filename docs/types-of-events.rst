@@ -83,7 +83,7 @@ Dla klucza **mobile** obiekt params **POWINIEN** być zbudowany wg następujące
     "body": "treść sms"
    }
 
-Struktura podstawowych zdarzeń w SAREhub
+Struktura zdarzeń w SAREhub
 ========================================
 
 Każde zdarzenie ma następujący format:
@@ -562,8 +562,7 @@ Przykład:
         },
         "uri": {
             "type": "string",
-            "title": "Uri strony.",
-            "description": "An explanation about the purpose of this instance."
+            "title": "Uri strony."
         },
         "domain": {
             "type": "string",

@@ -440,7 +440,7 @@ Przykład:
     }
   }
 
-* **cart_checkout_started** - zdarzenie wysyłane w momencie rozpoczęcia procesu zamówienia
+* **cart_initialized_checkout** - zdarzenie wysyłane w momencie rozpoczęcia procesu zamówienia
 
 .. code-block:: json
 
@@ -525,7 +525,7 @@ Krok zapłaty za zamówienie:
       }
   }
 
-* **cart_checkout_completed** - zdarzenie wysyłane w momencie zakończenia procesu zamówienia
+* **cart_completed_checkout** - zdarzenie wysyłane w momencie zakończenia procesu zamówienia
 
 .. code-block:: json
 

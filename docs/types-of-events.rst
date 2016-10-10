@@ -83,6 +83,44 @@ Dla klucza **mobile** obiekt params **POWINIEN** być zbudowany wg następujące
     "body": "treść sms"
    }
 
+Struktura podstawowych zdarzeń w SAREhub
+========================================
+
+Każde zdarzenie ma następujący format:
+
+.. code-block:: json
+
+  {
+    "type": "object",
+    "title": "Zdarzenie użytkownika.",
+    "properties": {
+        "type": {
+            "type": "string",
+            "title": "Typ zdarzenia."
+        },
+        "user": {
+            "type": "object",
+            "title": "Klucze identyfikujące użytkownika.",
+            "properties": {}
+        },
+        "time": {
+            "type": "integer",
+            "title": "Czas wystąpienia zdarzenia."
+        },
+        "params": {
+            "type": "object",
+            "title": "Atrybuty opisujące konkretne zdarzenie.",
+            "properties": {}
+        }
+    },
+    "required": [
+        "type",
+        "user",
+        "time",
+        "params"
+    ]
+  }
+
 Lista zdarzeń oraz atrybutów je opisujących
 ===========================================
 

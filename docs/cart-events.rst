@@ -440,7 +440,7 @@ Przykład:
     }
   }
 
-* **cart_initialized_checkout** - zdarzenie wysyłane w momencie rozpoczęcia procesu zamówienia
+* **cart_checkout_started** - zdarzenie wysyłane w momencie rozpoczęcia procesu zamówienia
 
 .. code-block:: json
 
@@ -484,10 +484,15 @@ Przykład:
         "cart_id": {
             "type": "string",
             "title": "Id koszyka."
+        },
+        "step_id": {
+            "type": "string",
+            "title": "Krok procesu zamówienia."
         }
     },
     "required": [
-        "cart_id"
+        "cart_id",
+        "step_id"
     ]
   }
 
@@ -525,7 +530,7 @@ Krok zapłaty za zamówienie:
       }
   }
 
-* **cart_completed_checkout** - zdarzenie wysyłane w momencie zakończenia procesu zamówienia
+* **cart_checkout_completed** - zdarzenie wysyłane w momencie zakończenia procesu zamówienia
 
 .. code-block:: json
 
